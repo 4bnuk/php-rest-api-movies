@@ -6,7 +6,6 @@ class GenreController {
     private $genre;
 
     public function __construct($conn, $requestMethod, $genreId) {
-        $this->conn = $conn;
         $this->requestMethod = $requestMethod;
         $this->genreId = $genreId;
         $this->genre = new Genre($conn);
