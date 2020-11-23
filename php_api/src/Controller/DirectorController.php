@@ -7,7 +7,6 @@ class DirectorController
     private $director;
 
     public function __construct($conn, $requestMethod, $directorId) {
-        $this->conn = $conn;
         $this->requestMethod = $requestMethod;
         $this->directorId = $directorId;
         $this->director = new Director($conn);
