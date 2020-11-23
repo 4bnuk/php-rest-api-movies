@@ -6,7 +6,6 @@ class MovieController {
     private $movie;
 
     public function __construct($conn, $requestMethod, $movieId) {
-        $this->conn = $conn;
         $this->requestMethod = $requestMethod;
         $this->movieId = $movieId;
         $this->movie = new Movie($conn);
